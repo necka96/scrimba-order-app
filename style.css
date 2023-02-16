@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Smythe&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Smythe", cursive;
+  transition: all 0.5s ease-in-out;
+}
+header {
+  height: 167px;
+  padding: 2rem;
+  background: url("./image/ferks-guare-KEZdWfYD-ow-unsplash.jpg ") center/cover;
+  color: #fff;
+}
+h1 {
+  font-size: 39px;
+}
+header {
+  position: relative;
+}
+header p {
+  font-size: 22px;
+}
+.dark-mode {
+  background: #281d1d;
+  color: #ecfdf5;
+}
+#icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 30px;
+
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+.menu-conteinar {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.51);
+}
+.menu-item {
+  display: flex;
+  gap: 1rem;
+}
+.icon h2 {
+  font-size: 3rem;
+}
+.item-ingredient {
+  margin: 5px 0;
+  opacity: 0.6;
+  font-size: smaller;
+}
+.dark-mode .menu-btn {
+  color: #ecfdf5;
+  border-color: #ecfdf5;
+}
+.menu-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  outline: none;
+  border: 1px solid rgba(128, 128, 128, 0.51);
+  background: none;
+  cursor: pointer;
+}
+.order {
+  padding: 2rem;
+  display: none;
+}
+.order.active {
+  display: block;
+}
+.order h2 {
+  text-align: center;
+}
+.total-price {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pay-btn {
+  width: 100%;
+  padding: 0.5rem;
+  cursor: pointer;
+  background-color: #16db99;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+.order-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.51);
+  position: relative;
+}
+.order-item {
+  margin: 1rem 0;
+  display: flex;
+  gap: 2px;
+  position: relative;
+}
+.dark-mode .remove-btn {
+  color: #ecfdf5;
+}
+.remove-btn {
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 0.8rem;
+  cursor: pointer;
+  margin-left: 10px;
+  position: absolute;
+  right: -3rem;
+}
+.order-name {
+  font-size: 2rem;
+}
+.dark-mode .form {
+  background: #281d1d;
+}
+.form {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 500px;
+  padding: 2rem;
+  left: 50%;
+  gap: 1rem;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  filter: drop-shadow(5px 5px 10px #000);
+  display: none;
+}
+.form .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#close {
+  cursor: pointer;
+}
+.form.active {
+  display: flex;
+}
+.form input,
+.form button {
+  padding: 1rem;
+}
+.form button {
+  cursor: pointer;
+  background-color: #16db99;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+.dark-mode .order-message {
+  background: #16db99;
+}
+.order-message {
+  padding: 2rem;
+  text-align: center;
+  background: #ecfdf5;
+  width: 90%;
+  max-width: 500px;
+  margin: 10px auto;
+  display: none;
+  border-radius: 3px;
+}
+.order-message.active {
+  display: block;
+}

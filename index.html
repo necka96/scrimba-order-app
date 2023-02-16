@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Order app</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="./image/moon.png" id="icon" alt="theme-Icon" />
+        <h1>Jimmy’s Diner</h1>
+        <p>The best burgers and pizzas in town.</p>
+      </header>
+      <section class="order-menu"></section>
+      <section class="order">
+        <h2>Your order</h2>
+        <div class="order-feed"></div>
+
+        <div class="price-item">
+          <div class="total-price">
+            <p class="total-price-text">Total Price:</p>
+            <p class="price-holder"></p>
+          </div>
+        </div>
+        <div class="pay-btn-holder">
+          <button class="pay-btn" id="pay-btn">Complete Order</button>
+        </div>
+      </section>
+      <form action="#" class="form" id="form">
+        <div class="title">
+          <h2>Enter card details</h2>
+          <div><i class="fa-sharp fa-solid fa-xmark" id="close"></i></div>
+        </div>
+        <input type="text" name="name" placeholder="Enter your name" required />
+        <input
+          type="text"
+          name="card-numer"
+          placeholder="Enter card number"
+          required
+        />
+        <input type="text" name="cvv" placeholder="Enter CVV" required />
+        <button id="submit-btn">Pay</button>
+      </form>
+      <section class="order-message"></section>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/2556025caf.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>
